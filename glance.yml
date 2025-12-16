@@ -31,21 +31,27 @@ pages:
                 links:
                   - title: Radarr (Movies)
                     url: http://radarr.home.arpa/
+                    icon: sh:radarr
 
                   - title: Radarr (Dont change anything here, use the other one)
                     url: http://radarr-auto.home.arpa/
+                    icon: sh:radarr
 
                   - title: Sonarr (Series)
                     url: http://sonarr.home.arpa/
+                    icon: sh:sonarr
 
                   - title: Prowlarr
                     url: http://prowlarr.home.arpa/
+                    icon: sh:prowlarr
 
                   - title: Transmissionic (Torrent)
                     url: http://transmission.home.arpa/transmission/web/
+                    icon: sh:transmission
 
                   - title: Jellyseerr
                     url: http://jellyseerr.home.arpa
+                    icon: sh:jellyseerr
 
                   - title: Bazarr
                     icon: di:bazarr
@@ -61,6 +67,6 @@ pages:
 
                   - title: Huntarr
                     icon: sh:huntarr
-                    url: http://Hunterr.home.arpa
+                    url: http://hunterr.home.arpa
 
 
