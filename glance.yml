@@ -1,45 +1,66 @@
-- name: Startpage
-  width: slim
-  hide-desktop-navigation: false
-  center-vertically: true
-  columns:
-    - size: full
-      widgets:
-        - type: bookmarks
-          groups:
-            - title: Public Links
-              links:
-                - title: Jellyfin
-                  url: https://saurav-server.duckdns.org/movie/
-                  icon: sh:jellyfin
+pages:
+  - name: Startpage
+    width: slim
+    hide-desktop-navigation: false
+    desktop-navigation-width: wide
+    center-vertically: true
+    columns:
+      - size: full
+        widgets:
+          - type: bookmarks
+            groups:
+              - title: Public Links
+                links:
+                  - title: Jellyfin
+                    url: https://saurav-server.duckdns.org/movie/
+                    icon: sh:jellyfin
 
-                - title: Immich
-                  url: https://saurav-photos.duckdns.org/
-                  icon: sh:immich
+                  - title: Immich
+                    url: https://saurav-photos.duckdns.org/
+                    icon: sh:immich
 
-                - title: Nextcloud
-                  url: https://saurav-nextcloud.duckdns.org/
-                  icon: sh:nextcloud
+                  - title: Nextcloud
+                    url: https://saurav-nextcloud.duckdns.org/
+                    icon: sh:nextcloud
 
-                - title: Uptime Robot
-                  url: ${UPTIME_ROBOT}
-                  icon: https://uptimerobot.com/favicon.ico
+                  - title: Uptime Robot
+                    url: ${UPTIME_ROBOT}
+                    icon: https://uptimerobot.com/favicon.ico
 
-            - title: Entertainment
-              links:
-                - title: YouTube
-                  url: https://www.youtube.com/
-                - title: Prime Video
-                  url: https://www.primevideo.com/
-                - title: Disney+
-                  url: https://www.disneyplus.com/
-            - title: Social
-              links:
-                - title: Reddit
-                  url: https://www.reddit.com/
-                - title: Twitter
-                  url: https://twitter.com/
-                - title: Instagram
-                  url: https://www.instagram.com/
+              - title: Download & Media
+                links:
+                  - title: Radarr (Movies)
+                    url: http://radarr.home.arpa/
+
+                  - title: Radarr (Dont change anything here, use the other one)
+                    url: http://radarr-auto.home.arpa/
+
+                  - title: Sonarr (Series)
+                    url: http://sonarr.home.arpa/
+
+                  - title: Prowlarr
+                    url: http://prowlarr.home.arpa/
+
+                  - title: Transmissionic (Torrent)
+                    url: http://transmission.home.arpa/transmission/web/
+
+                  - title: Jellyseerr
+                    url: http://jellyseerr.home.arpa
+
+                  - title: Bazarr
+                    icon: di:bazarr
+                    url: http://bazarr.home.arpa
+
+                  - title: Bazarr-manual-radarr
+                    icon: di:bazarr
+                    url: http://bazarr-manual.home.arpa
+
+                  - title: Cleaner
+                    icon: di:cleanuperr
+                    url: http://clean.home.arpa
+
+                  - title: Huntarr
+                    icon: sh:huntarr
+                    url: http://Hunterr.home.arpa
 
 
