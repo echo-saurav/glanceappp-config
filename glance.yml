@@ -1,46 +1,30 @@
 - name: Startpage
   width: slim
-  hide-desktop-navigation: true
+  hide-desktop-navigation: false
   center-vertically: true
   columns:
     - size: full
       widgets:
-        - type: search
-          autofocus: true
-
-        - type: monitor
-          cache: 1m
-          title: Services
-          sites:
-            - title: Jellyfin
-              url: https://yourdomain.com/
-              icon: si:jellyfin
-            - title: Gitea
-              url: https://yourdomain.com/
-              icon: si:gitea
-            - title: qBittorrent # only for Linux ISOs, of course
-              url: https://yourdomain.com/
-              icon: si:qbittorrent
-            - title: Immich
-              url: https://yourdomain.com/
-              icon: si:immich
-            - title: AdGuard Home
-              url: https://yourdomain.com/
-              icon: si:adguard
-            - title: Vaultwarden
-              url: https://yourdomain.com/
-              icon: si:vaultwarden
-
         - type: bookmarks
           groups:
-            - title: General
+            - title: Public Links
               links:
-                - title: Gmail
-                  url: https://mail.google.com/mail/u/0/
-                - title: Amazon
-                  url: https://www.amazon.com/
-                - title: Github
-                  url: https://github.com/
+                - title: Jellyfin
+                  url: https://saurav-server.duckdns.org/movie/
+                  icon: sh:jellyfin
+
+                - title: Immich
+                  url: https://saurav-photos.duckdns.org/
+                  icon: sh:immich
+
+                - title: Nextcloud
+                  url: https://saurav-nextcloud.duckdns.org/
+                  icon: sh:nextcloud
+
+                - title: Uptime Robot
+                  url: ${UPTIME_ROBOT}
+                  icon: https://uptimerobot.com/favicon.ico
+
             - title: Entertainment
               links:
                 - title: YouTube
